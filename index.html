@@ -3,228 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hymnlight Privacy Policy</title>
+<title>Hymnlight</title>
+<meta name="description" content="Hymnlight: an alarm that wakes you to classic hymns and shows a Bible verse for every time of day.">
+<link rel="icon" href="icon.png">
 <style>
-  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #2b1d0e; background: #fff8f3; margin: 0; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.8rem; margin-bottom: 0; }
-  h2 { font-size: 1.2rem; margin-top: 2rem; }
-  .meta { color: #6b4e2e; margin-top: 4px; }
-  nav a { margin-right: 12px; }
-  table { border-collapse: collapse; width: 100%; }
-  td, th { border: 1px solid #e3cfb8; padding: 6px 8px; text-align: left; vertical-align: top; }
-  hr { border: 0; border-top: 1px solid #e3cfb8; margin: 48px 0; }
+  :root { --bg:#fbf7ee; --fg:#2b2416; --muted:#6f6555; --accent:#b8862b; --card:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15120c; --fg:#f2eadb; --muted:#b2a692; --accent:#d8a94a; --card:#211c13; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width:640px; margin:0 auto; padding:64px 16px 48px; text-align:center; }
+  img.icon { width:128px; height:128px; border-radius:28px; box-shadow:0 8px 24px rgba(0,0,0,.18); }
+  h1 { font-size:2.4rem; margin:24px 0 8px; font-weight:normal; }
+  p.tag { color:var(--muted); font-size:1.15rem; margin:0 0 32px; }
+  ul.features { list-style:none; padding:0; margin:0 0 40px; text-align:left; display:grid; gap:12px; }
+  ul.features li { background:var(--card); border-radius:12px; padding:14px 18px; }
+  ul.features b { color:var(--accent); font-weight:normal; display:block; }
+  .stores { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
+  .stores a { background:var(--fg); color:var(--bg); text-decoration:none; padding:12px 22px; border-radius:10px; font-family:system-ui, sans-serif; font-size:.95rem; }
+  .stores a.soon { opacity:.45; pointer-events:none; }
+  footer { color:var(--muted); font-size:.9rem; font-family:system-ui, sans-serif; }
+  footer a { color:inherit; }
 </style>
 </head>
 <body>
 <main>
-<nav><a href="#en">English</a><a href="#es">Español</a><a href="#de">Deutsch</a><a href="#fr">Français</a></nav>
+  <img class="icon" src="icon.png" alt="Hymnlight icon">
+  <h1>Hymnlight</h1>
+  <p class="tag">Wake up to classic hymns and a Bible verse for every time of day.</p>
 
-<section id="en">
-<h1>Hymnlight Privacy Policy</h1>
-<p class="meta">Effective date: 2026-10-30 · Developer: Infinit-C · Contact: dev@infinit-c.com</p>
+  <ul class="features">
+    <li><b>Hymn alarms</b>Choose a public-domain hymn for each alarm. It keeps playing until you dismiss it.</li>
+    <li><b>A verse for every hour</b>Morning, noon, evening and night each bring a different verse from the King James Bible.</li>
+    <li><b>Share and remember</b>Send today's verse to a friend with one tap.</li>
+    <li><b>Simple and private</b>No account, no login. Supported by a small banner ad.</li>
+  </ul>
 
-<h2>Summary</h2>
-<p>Hymnlight is a hymn alarm clock that shows a Bible verse for the time of day. It has no accounts and the developer runs no servers, so we do not receive or store your personal information. Your alarms and settings are saved on your device. The app shows ads from Google AdMob, and Google collects some information to provide those ads, as described below.</p>
+  <div class="stores">
+    <a class="soon" href="#">Google Play — coming soon</a>
+    <a class="soon" href="#">App Store — coming soon</a>
+  </div>
 
-<h2>Information stored on your device</h2>
-<p>Hymnlight saves the following only on your device, to make the app work:</p>
-<ul>
-  <li>Your alarms: time, repeat days, chosen hymn, and whether each alarm is on.</li>
-  <li>Your settings: language, card style, large-text preference, and the time of the daily verse notification.</li>
-  <li>Verses you save as favorites, and how many alarms you have stopped (used once to ask for a store rating).</li>
-  <li>A schedule of upcoming verses for the home-screen widget (Android).</li>
-</ul>
-<p>This information is not sent to us. If Android backup is turned on for your device, Android may include it in your device backup in your Google account and restore it on a new device; that backup is managed by Google and you, not by us. Uninstalling the app deletes the information from your device.</p>
-
-<h2>Advertising (Google AdMob)</h2>
-<p>Hymnlight is free and supported by ads from Google AdMob. To show, measure, and protect ads from fraud, Google may collect information such as your device's advertising identifier, IP address, approximate location derived from the IP address, device and app information, ad interactions, and diagnostic data. Google's use of this information is governed by Google's own policies: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<p>Where the law requires it (for example in the European Economic Area, the United Kingdom, Switzerland, and some US states), the app shows Google's consent message before ads are personalized. You can change your choice at any time under <strong>Settings &gt; Privacy choices</strong>, which appears in those regions.</p>
-<p>You can also limit personalized ads in your device settings: on Android, under Settings &gt; Privacy &gt; Ads (reset or delete your advertising ID). Hymnlight does not ask iPhone users for permission to track them, so the iOS advertising identifier is not available to the app or its ad partner.</p>
-
-<h2>Permissions</h2>
-<table>
-  <tr><th>Permission</th><th>Why the app uses it</th></tr>
-  <tr><td>Notifications</td><td>Show the alarm and today's verse when an alarm rings, and the daily verse notification if you leave it on.</td></tr>
-  <tr><td>Alarms &amp; reminders (exact alarms)</td><td>Ring at the exact time you set.</td></tr>
-  <tr><td>Full-screen notifications</td><td>Show the alarm screen over the lock screen.</td></tr>
-  <tr><td>Foreground service (media playback)</td><td>Keep the hymn playing while the alarm rings.</td></tr>
-  <tr><td>Run at startup</td><td>Restore your alarms after the device restarts.</td></tr>
-  <tr><td>Vibration, wake lock</td><td>Vibrate and wake the screen for an alarm.</td></tr>
-  <tr><td>Internet, network state, advertising ID</td><td>Load ads from Google AdMob.</td></tr>
-</table>
-
-<h2>Sharing verse cards</h2>
-<p>When you tap Share, the app creates an image of the verse card on your device and opens your device's share sheet. The image goes only where you choose to send it.</p>
-
-<h2>Children</h2>
-<p>Hymnlight is intended for a general audience and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
-
-<h2>Your choices and rights</h2>
-<p>Because the developer does not hold your personal information, there is nothing for us to access, correct, or delete on our side; uninstalling the app removes what it stored on your device, and any device backup can be managed in your Google account settings. We do not sell personal information. Personalized ads from Google may count as "sharing" or "targeted advertising" under some US state laws; you can opt out under Settings &gt; Privacy choices (where shown) or your device's ad settings. For information Google holds, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
-
-<h2>Changes</h2>
-<p>If this policy changes, we will update it on this page and change the effective date above.</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy: dev@infinit-c.com</p>
-</section>
-
-<hr>
-
-<section id="es" lang="es">
-<h1>Política de privacidad de Hymnlight</h1>
-<p class="meta">Fecha de vigencia: 2026-10-30 · Desarrollador: Infinit-C · Contacto: dev@infinit-c.com</p>
-
-<h2>Resumen</h2>
-<p>Hymnlight es una alarma con himnos que muestra un versículo bíblico según la hora del día. No tiene cuentas y el desarrollador no opera servidores, así que no recibimos ni guardamos tu información personal. Tus alarmas y ajustes se guardan en tu dispositivo. La aplicación muestra anuncios de Google AdMob, y Google recopila cierta información para ofrecerlos, como se explica abajo.</p>
-
-<h2>Información guardada en tu dispositivo</h2>
-<p>Hymnlight guarda lo siguiente solo en tu dispositivo, para que la aplicación funcione:</p>
-<ul>
-  <li>Tus alarmas: hora, días de repetición, himno elegido y si cada alarma está activada.</li>
-  <li>Tus ajustes: idioma, estilo de tarjeta, texto grande y la hora de la notificación del versículo diario.</li>
-  <li>Los versículos que guardas como favoritos y cuántas alarmas has apagado (se usa una sola vez para pedir una calificación en la tienda).</li>
-  <li>Un calendario de los próximos versículos para el widget de la pantalla de inicio (Android).</li>
-</ul>
-<p>Esta información no se envía a nosotros. Si la copia de seguridad de Android está activada en tu dispositivo, Android puede incluirla en la copia de seguridad de tu cuenta de Google y restaurarla en un dispositivo nuevo; esa copia la administran Google y tú, no nosotros. Al desinstalar la aplicación, la información se borra de tu dispositivo.</p>
-
-<h2>Publicidad (Google AdMob)</h2>
-<p>Hymnlight es gratuita y se financia con anuncios de Google AdMob. Para mostrar y medir anuncios y protegerlos contra fraude, Google puede recopilar información como el identificador de publicidad del dispositivo, la dirección IP, la ubicación aproximada derivada de la IP, información del dispositivo y de la aplicación, interacciones con anuncios y datos de diagnóstico. El uso que Google hace de esta información se rige por sus propias políticas: <a href="https://policies.google.com/technologies/partner-sites?hl=es">Cómo utiliza Google la información de sitios o aplicaciones que usan sus servicios</a> y la <a href="https://policies.google.com/privacy?hl=es">Política de privacidad de Google</a>.</p>
-<p>Donde la ley lo exige (por ejemplo, en el Espacio Económico Europeo, el Reino Unido, Suiza y algunos estados de EE. UU.), la aplicación muestra el mensaje de consentimiento de Google antes de personalizar anuncios. Puedes cambiar tu elección en cualquier momento en <strong>Ajustes &gt; Opciones de privacidad</strong>, que aparece en esas regiones.</p>
-<p>También puedes limitar los anuncios personalizados en los ajustes del dispositivo: en Android, en Ajustes &gt; Privacidad &gt; Anuncios (restablece o elimina tu ID de publicidad). Hymnlight no pide permiso de seguimiento a los usuarios de iPhone, por lo que el identificador de publicidad de iOS no está disponible para la aplicación ni para su socio publicitario.</p>
-
-<h2>Permisos</h2>
-<table>
-  <tr><th>Permiso</th><th>Para qué se usa</th></tr>
-  <tr><td>Notificaciones</td><td>Mostrar la alarma y el versículo del día cuando suena una alarma, y la notificación del versículo diario si la dejas activada.</td></tr>
-  <tr><td>Alarmas y recordatorios (alarmas exactas)</td><td>Sonar a la hora exacta que elegiste.</td></tr>
-  <tr><td>Notificaciones de pantalla completa</td><td>Mostrar la pantalla de la alarma sobre la pantalla de bloqueo.</td></tr>
-  <tr><td>Servicio en primer plano (reproducción multimedia)</td><td>Mantener el himno sonando mientras suena la alarma.</td></tr>
-  <tr><td>Ejecutar al iniciar</td><td>Restaurar tus alarmas después de reiniciar el dispositivo.</td></tr>
-  <tr><td>Vibración, mantener activo</td><td>Vibrar y encender la pantalla para una alarma.</td></tr>
-  <tr><td>Internet, estado de la red, ID de publicidad</td><td>Cargar anuncios de Google AdMob.</td></tr>
-</table>
-
-<h2>Compartir tarjetas de versículos</h2>
-<p>Cuando tocas Compartir, la aplicación crea una imagen de la tarjeta en tu dispositivo y abre el menú para compartir del sistema. La imagen solo va a donde tú decidas enviarla.</p>
-
-<h2>Niños</h2>
-<p>Hymnlight está pensada para un público general y no está dirigida a menores de 13 años. No recopilamos a sabiendas información personal de niños.</p>
-
-<h2>Tus opciones y derechos</h2>
-<p>Como el desarrollador no guarda tu información personal, no hay nada que consultar, corregir o borrar de nuestro lado; al desinstalar la aplicación se elimina lo que guardó en tu dispositivo, y cualquier copia de seguridad se administra en los ajustes de tu cuenta de Google. No vendemos información personal. Los anuncios personalizados de Google pueden considerarse "compartir" o "publicidad dirigida" según algunas leyes estatales de EE. UU.; puedes excluirte en Ajustes &gt; Opciones de privacidad (donde aparece) o con los ajustes de anuncios de tu dispositivo. Para la información que guarda Google, consulta la <a href="https://policies.google.com/privacy?hl=es">Política de privacidad de Google</a>.</p>
-
-<h2>Cambios</h2>
-<p>Si esta política cambia, la actualizaremos en esta página y cambiaremos la fecha de vigencia.</p>
-
-<h2>Contacto</h2>
-<p>Preguntas sobre esta política: dev@infinit-c.com</p>
-</section>
-
-<hr>
-
-<section id="de" lang="de">
-<h1>Datenschutzerklärung von Hymnlight</h1>
-<p class="meta">Gültig ab: 2026-10-30 · Entwickler: Infinit-C · Kontakt: dev@infinit-c.com</p>
-
-<h2>Zusammenfassung</h2>
-<p>Hymnlight ist ein Wecker mit Chorälen, der einen Bibelvers passend zur Tageszeit zeigt. Es gibt keine Benutzerkonten und der Entwickler betreibt keine Server; wir erhalten oder speichern daher keine personenbezogenen Daten von dir. Deine Wecker und Einstellungen werden auf deinem Gerät gespeichert. Die App zeigt Werbung von Google AdMob; Google erhebt dafür einige Informationen, wie unten beschrieben.</p>
-
-<h2>Auf deinem Gerät gespeicherte Informationen</h2>
-<p>Hymnlight speichert Folgendes nur auf deinem Gerät, damit die App funktioniert:</p>
-<ul>
-  <li>Deine Wecker: Uhrzeit, Wiederholungstage, gewählter Choral und ob der Wecker eingeschaltet ist.</li>
-  <li>Deine Einstellungen: Sprache, Kartenstil, große Schrift und die Uhrzeit der täglichen Bibelvers-Mitteilung.</li>
-  <li>Bibelverse, die du als Favoriten speicherst, und wie viele Wecker du ausgeschaltet hast (wird einmalig genutzt, um um eine Bewertung im Store zu bitten).</li>
-  <li>Einen Plan der nächsten Bibelverse für das Startbildschirm-Widget (Android).</li>
-</ul>
-<p>Diese Informationen werden nicht an uns gesendet. Wenn die Android-Sicherung auf deinem Gerät aktiviert ist, kann Android sie in die Gerätesicherung in deinem Google-Konto aufnehmen und auf einem neuen Gerät wiederherstellen; diese Sicherung verwalten Google und du, nicht wir. Wenn du die App deinstallierst, werden die Informationen von deinem Gerät gelöscht.</p>
-
-<h2>Werbung (Google AdMob)</h2>
-<p>Hymnlight ist kostenlos und wird durch Werbung von Google AdMob finanziert. Um Anzeigen auszuliefern, zu messen und vor Betrug zu schützen, kann Google Informationen erheben, etwa die Werbe-ID deines Geräts, die IP-Adresse, einen daraus abgeleiteten ungefähren Standort, Geräte- und App-Informationen, Interaktionen mit Anzeigen und Diagnosedaten. Für die Nutzung dieser Informationen gelten die Richtlinien von Google: <a href="https://policies.google.com/technologies/partner-sites?hl=de">Wie Google Daten von Websites oder Apps verwendet, die Google-Dienste nutzen</a> und die <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
-<p>Wo das Gesetz es verlangt (zum Beispiel im Europäischen Wirtschaftsraum, im Vereinigten Königreich, in der Schweiz und in einigen US-Bundesstaaten), zeigt die App die Einwilligungsabfrage von Google, bevor Anzeigen personalisiert werden. Du kannst deine Auswahl jederzeit unter <strong>Einstellungen &gt; Datenschutzoptionen</strong> ändern; dieser Punkt erscheint in diesen Regionen.</p>
-<p>Personalisierte Werbung kannst du außerdem in den Geräteeinstellungen einschränken: unter Android in Einstellungen &gt; Datenschutz &gt; Werbung (Werbe-ID zurücksetzen oder löschen). Hymnlight fragt iPhone-Nutzer nicht nach einer Erlaubnis zum Tracking; die Werbe-ID von iOS steht der App und ihrem Werbepartner daher nicht zur Verfügung.</p>
-
-<h2>Berechtigungen</h2>
-<table>
-  <tr><th>Berechtigung</th><th>Wofür die App sie nutzt</th></tr>
-  <tr><td>Benachrichtigungen</td><td>Den Wecker und den Bibelvers anzeigen, wenn ein Wecker klingelt, sowie die tägliche Bibelvers-Mitteilung, wenn sie eingeschaltet ist.</td></tr>
-  <tr><td>Wecker und Erinnerungen (exakte Wecker)</td><td>Genau zur eingestellten Zeit klingeln.</td></tr>
-  <tr><td>Vollbild-Benachrichtigungen</td><td>Den Weckbildschirm über dem Sperrbildschirm anzeigen.</td></tr>
-  <tr><td>Vordergrunddienst (Medienwiedergabe)</td><td>Den Choral weiterspielen, solange der Wecker klingelt.</td></tr>
-  <tr><td>Beim Start ausführen</td><td>Deine Wecker nach einem Neustart des Geräts wiederherstellen.</td></tr>
-  <tr><td>Vibration, Aktivhalten</td><td>Für einen Wecker vibrieren und den Bildschirm einschalten.</td></tr>
-  <tr><td>Internet, Netzwerkstatus, Werbe-ID</td><td>Werbung von Google AdMob laden.</td></tr>
-</table>
-
-<h2>Bibelvers-Karten teilen</h2>
-<p>Wenn du auf Teilen tippst, erstellt die App auf deinem Gerät ein Bild der Karte und öffnet das Teilen-Menü des Systems. Das Bild geht nur dorthin, wohin du es sendest.</p>
-
-<h2>Kinder</h2>
-<p>Hymnlight richtet sich an ein allgemeines Publikum und nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern.</p>
-
-<h2>Deine Wahlmöglichkeiten und Rechte</h2>
-<p>Da der Entwickler keine personenbezogenen Daten von dir speichert, gibt es bei uns nichts einzusehen, zu berichtigen oder zu löschen; beim Deinstallieren werden die in der App gespeicherten Daten von deinem Gerät entfernt, und eine Gerätesicherung kannst du in den Einstellungen deines Google-Kontos verwalten. Wir verkaufen keine personenbezogenen Daten. Personalisierte Werbung von Google kann nach den Gesetzen einiger US-Bundesstaaten als „Weitergabe“ („sharing“) oder „zielgerichtete Werbung“ („targeted advertising“) gelten; du kannst dem unter Einstellungen &gt; Datenschutzoptionen (wo angezeigt) oder in den Werbeeinstellungen deines Geräts widersprechen. Zu den Informationen, die Google speichert, siehe die <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von Google</a>.</p>
-
-<h2>Änderungen</h2>
-<p>Wenn sich diese Erklärung ändert, aktualisieren wir sie auf dieser Seite und ändern das Datum oben.</p>
-
-<h2>Kontakt</h2>
-<p>Fragen zu dieser Datenschutzerklärung: dev@infinit-c.com</p>
-</section>
-
-<hr>
-
-<section id="fr" lang="fr">
-<h1>Politique de confidentialité de Hymnlight</h1>
-<p class="meta">Date d’effet : 2026-10-30 · Développeur : Infinit-C · Contact : dev@infinit-c.com</p>
-
-<h2>Résumé</h2>
-<p>Hymnlight est un réveil avec des cantiques qui affiche un verset biblique adapté au moment de la journée. Il n’y a pas de compte utilisateur et le développeur n’exploite aucun serveur ; nous ne recevons ni ne conservons donc vos informations personnelles. Vos réveils et vos réglages sont enregistrés sur votre appareil. L’application affiche des annonces de Google AdMob ; Google collecte certaines informations pour les diffuser, comme décrit ci-dessous.</p>
-
-<h2>Informations enregistrées sur votre appareil</h2>
-<p>Hymnlight enregistre uniquement sur votre appareil les éléments suivants, nécessaires à son fonctionnement :</p>
-<ul>
-  <li>Vos réveils : heure, jours de répétition, cantique choisi et état activé ou non.</li>
-  <li>Vos réglages : langue, style de carte, grand texte et heure de la notification du verset quotidien.</li>
-  <li>Les versets que vous enregistrez en favoris, et le nombre de réveils que vous avez arrêtés (utilisé une seule fois pour vous proposer de noter l’application).</li>
-  <li>Un calendrier des prochains versets pour le widget de l’écran d’accueil (Android).</li>
-</ul>
-<p>Ces informations ne nous sont pas envoyées. Si la sauvegarde Android est activée sur votre appareil, Android peut les inclure dans la sauvegarde de votre compte Google et les restaurer sur un nouvel appareil ; cette sauvegarde est gérée par Google et par vous, pas par nous. La désinstallation de l’application supprime ces informations de votre appareil.</p>
-
-<h2>Publicité (Google AdMob)</h2>
-<p>Hymnlight est gratuite et financée par des annonces Google AdMob. Pour diffuser et mesurer les annonces et les protéger contre la fraude, Google peut collecter des informations telles que l’identifiant publicitaire de l’appareil, l’adresse IP, une localisation approximative déduite de l’adresse IP, des informations sur l’appareil et l’application, les interactions avec les annonces et des données de diagnostic. L’utilisation de ces informations par Google est régie par ses propres règles : <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a> et les <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.</p>
-<p>Lorsque la loi l’exige (par exemple dans l’Espace économique européen, au Royaume-Uni, en Suisse et dans certains États américains), l’application affiche le message de consentement de Google avant toute personnalisation des annonces. Vous pouvez modifier votre choix à tout moment dans <strong>Paramètres &gt; Choix de confidentialité</strong>, qui apparaît dans ces régions.</p>
-<p>Vous pouvez aussi limiter les annonces personnalisées dans les réglages de votre appareil : sur Android, dans Paramètres &gt; Confidentialité &gt; Annonces (réinitialiser ou supprimer l’identifiant publicitaire). Hymnlight ne demande pas aux utilisateurs d’iPhone l’autorisation de les suivre ; l’identifiant publicitaire iOS n’est donc pas accessible à l’application ni à son partenaire publicitaire.</p>
-
-<h2>Autorisations</h2>
-<table>
-  <tr><th>Autorisation</th><th>Utilisation</th></tr>
-  <tr><td>Notifications</td><td>Afficher le réveil et le verset du jour quand un réveil sonne, ainsi que la notification du verset quotidien si vous la laissez activée.</td></tr>
-  <tr><td>Alarmes et rappels (alarmes exactes)</td><td>Sonner à l’heure exacte que vous avez choisie.</td></tr>
-  <tr><td>Notifications en plein écran</td><td>Afficher l’écran du réveil par-dessus l’écran de verrouillage.</td></tr>
-  <tr><td>Service au premier plan (lecture multimédia)</td><td>Continuer à jouer le cantique pendant que le réveil sonne.</td></tr>
-  <tr><td>Exécution au démarrage</td><td>Rétablir vos réveils après un redémarrage de l’appareil.</td></tr>
-  <tr><td>Vibration, maintien de l’activité</td><td>Vibrer et allumer l’écran pour un réveil.</td></tr>
-  <tr><td>Internet, état du réseau, identifiant publicitaire</td><td>Charger les annonces de Google AdMob.</td></tr>
-</table>
-
-<h2>Partager des cartes de versets</h2>
-<p>Lorsque vous touchez Partager, l’application crée une image de la carte sur votre appareil et ouvre le menu de partage du système. L’image n’est envoyée qu’à l’endroit que vous choisissez.</p>
-
-<h2>Enfants</h2>
-<p>Hymnlight s’adresse à un public général et non aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d’informations personnelles concernant des enfants.</p>
-
-<h2>Vos choix et vos droits</h2>
-<p>Comme le développeur ne conserve pas vos informations personnelles, il n’y a rien à consulter, rectifier ou supprimer de notre côté ; la désinstallation supprime de votre appareil ce que l’application y avait enregistré, et une éventuelle sauvegarde se gère dans les paramètres de votre compte Google. Nous ne vendons pas d’informations personnelles. Selon les lois de certains États américains, les annonces personnalisées de Google peuvent être considérées comme un « partage » (« sharing ») ou de la « publicité ciblée » (« targeted advertising ») ; vous pouvez vous y opposer dans Paramètres &gt; Choix de confidentialité (lorsque cette option est proposée) ou dans les réglages publicitaires de votre appareil. Pour les informations conservées par Google, consultez les <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.</p>
-
-<h2>Modifications</h2>
-<p>Si cette politique change, nous la mettrons à jour sur cette page et modifierons la date ci-dessus.</p>
-
-<h2>Contact</h2>
-<p>Questions sur cette politique : dev@infinit-c.com</p>
-</section>
+  <footer>
+    <a href="privacy/">Privacy policy</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>
+    © 2026 Infinit-C
+  </footer>
 </main>
 </body>
 </html>
