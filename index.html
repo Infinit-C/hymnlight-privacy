@@ -13,7 +13,12 @@
   }
   * { box-sizing:border-box }
   body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 Georgia, "Times New Roman", serif; }
-  main { max-width:640px; margin:0 auto; padding:64px 16px 48px; text-align:center; }
+  main { max-width:640px; margin:0 auto; padding:40px 16px 48px; text-align:center; }
+  nav { font-family:system-ui, sans-serif; font-size:.9rem; margin-bottom:32px; }
+  nav a { color:var(--muted); text-decoration:none; margin:0 8px; }
+  nav a.on { color:var(--accent); font-weight:bold; }
+  section { display:none; }
+  section.on { display:block; }
   img.icon { width:128px; height:128px; border-radius:28px; box-shadow:0 8px 24px rgba(0,0,0,.18); }
   h1 { font-size:2.4rem; margin:24px 0 8px; font-weight:normal; }
   p.tag { color:var(--muted); font-size:1.15rem; margin:0 0 32px; }
@@ -29,26 +34,89 @@
 </head>
 <body>
 <main>
-  <img class="icon" src="icon.png" alt="Hymnlight icon">
-  <h1>Hymnlight</h1>
-  <p class="tag">Wake up to classic hymns and a Bible verse for every time of day.</p>
+  <nav><a href="#en">English</a><a href="#es">Español</a><a href="#de">Deutsch</a><a href="#fr">Français</a></nav>
 
-  <ul class="features">
-    <li><b>Hymn alarms</b>Choose a public-domain hymn for each alarm. It keeps playing until you dismiss it.</li>
-    <li><b>A verse for every hour</b>Morning, noon, evening and night each bring a different verse from the King James Bible.</li>
-    <li><b>Share and remember</b>Send today's verse to a friend with one tap.</li>
-    <li><b>Simple and private</b>No account, no login. Supported by a small banner ad.</li>
-  </ul>
+  <section id="en" lang="en">
+    <img class="icon" src="icon.png" alt="Hymnlight icon">
+    <h1>Hymnlight</h1>
+    <p class="tag">Wake up to classic hymns and a Bible verse for every time of day.</p>
+    <ul class="features">
+      <li><b>Hymn alarms</b>Choose a public-domain hymn for each alarm. It keeps playing until you dismiss it.</li>
+      <li><b>A verse for every hour</b>Morning, noon, evening and night each bring a different verse from the King James Bible.</li>
+      <li><b>Share and remember</b>Send today's verse to a friend with one tap.</li>
+      <li><b>Simple and private</b>No account, no login. Supported by a small banner ad.</li>
+    </ul>
+    <div class="stores">
+      <a class="soon" href="#">Google Play — coming soon</a>
+      <a class="soon" href="#">App Store — coming soon</a>
+    </div>
+    <footer><a href="privacy/#en">Privacy policy</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>© 2026 Infinit-C</footer>
+  </section>
 
-  <div class="stores">
-    <a class="soon" href="#">Google Play — coming soon</a>
-    <a class="soon" href="#">App Store — coming soon</a>
-  </div>
+  <section id="es" lang="es">
+    <img class="icon" src="icon.png" alt="Icono de Hymnlight">
+    <h1>Hymnlight</h1>
+    <p class="tag">Despierta con himnos clásicos y un versículo bíblico para cada momento del día.</p>
+    <ul class="features">
+      <li><b>Alarmas con himnos</b>Elige un himno de dominio público para cada alarma. Suena hasta que la apagues.</li>
+      <li><b>Un versículo para cada hora</b>Mañana, mediodía, tarde y noche traen un versículo distinto de la Biblia Reina-Valera.</li>
+      <li><b>Comparte y recuerda</b>Envía el versículo de hoy a un amigo con un solo toque.</li>
+      <li><b>Sencilla y privada</b>Sin cuenta ni inicio de sesión. Se financia con un pequeño anuncio.</li>
+    </ul>
+    <div class="stores">
+      <a class="soon" href="#">Google Play — próximamente</a>
+      <a class="soon" href="#">App Store — próximamente</a>
+    </div>
+    <footer><a href="privacy/#es">Política de privacidad</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>© 2026 Infinit-C</footer>
+  </section>
 
-  <footer>
-    <a href="privacy/">Privacy policy</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>
-    © 2026 Infinit-C
-  </footer>
+  <section id="de" lang="de">
+    <img class="icon" src="icon.png" alt="Hymnlight-Symbol">
+    <h1>Hymnlight</h1>
+    <p class="tag">Wach auf mit klassischen Chorälen und einem Bibelvers für jede Tageszeit.</p>
+    <ul class="features">
+      <li><b>Choral-Wecker</b>Wähle für jeden Wecker einen gemeinfreien Choral. Er spielt, bis du ihn ausschaltest.</li>
+      <li><b>Ein Vers für jede Stunde</b>Morgen, Mittag, Abend und Nacht bringen je einen anderen Vers aus der Lutherbibel.</li>
+      <li><b>Teilen und behalten</b>Schick den Vers des Tages mit einem Tipp an Freunde.</li>
+      <li><b>Einfach und privat</b>Kein Konto, keine Anmeldung. Finanziert durch eine kleine Werbeanzeige.</li>
+    </ul>
+    <div class="stores">
+      <a class="soon" href="#">Google Play — demnächst</a>
+      <a class="soon" href="#">App Store — demnächst</a>
+    </div>
+    <footer><a href="privacy/#de">Datenschutzerklärung</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>© 2026 Infinit-C</footer>
+  </section>
+
+  <section id="fr" lang="fr">
+    <img class="icon" src="icon.png" alt="Icône Hymnlight">
+    <h1>Hymnlight</h1>
+    <p class="tag">Réveillez-vous avec des cantiques classiques et un verset biblique pour chaque moment de la journée.</p>
+    <ul class="features">
+      <li><b>Réveils en cantiques</b>Choisissez un cantique du domaine public pour chaque réveil. Il joue jusqu'à ce que vous l'arrêtiez.</li>
+      <li><b>Un verset pour chaque heure</b>Matin, midi, soir et nuit apportent chacun un verset différent de la Bible Segond.</li>
+      <li><b>Partager et retenir</b>Envoyez le verset du jour à un ami d'un seul geste.</li>
+      <li><b>Simple et privée</b>Pas de compte, pas de connexion. Financée par une petite bannière publicitaire.</li>
+    </ul>
+    <div class="stores">
+      <a class="soon" href="#">Google Play — bientôt</a>
+      <a class="soon" href="#">App Store — bientôt</a>
+    </div>
+    <footer><a href="privacy/#fr">Politique de confidentialité</a> · <a href="mailto:dev@infinit-c.com">dev@infinit-c.com</a><br>© 2026 Infinit-C</footer>
+  </section>
 </main>
+<script>
+  var langs = ['en','es','de','fr'];
+  function show() {
+    var l = location.hash.slice(1);
+    if (langs.indexOf(l) < 0) l = (navigator.language || 'en').slice(0,2);
+    if (langs.indexOf(l) < 0) l = 'en';
+    langs.forEach(function (x) {
+      document.getElementById(x).classList.toggle('on', x === l);
+      document.querySelector('nav a[href="#' + x + '"]').classList.toggle('on', x === l);
+    });
+    document.documentElement.lang = l;
+  }
+  addEventListener('hashchange', show); show();
+</script>
 </body>
 </html>
