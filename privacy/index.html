@@ -13,10 +13,11 @@
   nav a { margin-right: 12px; }
   table { border-collapse: collapse; width: 100%; }
   td, th { border: 1px solid #e3cfb8; padding: 6px 8px; text-align: left; vertical-align: top; }
+  .top { position: fixed; right: 16px; bottom: 16px; width: 44px; height: 44px; border-radius: 50%; background: #2b1d0e; color: #fff; text-decoration: none; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 12px rgba(0,0,0,.25); }
   hr { border: 0; border-top: 1px solid #e3cfb8; margin: 48px 0; }
 </style>
 </head>
-<body>
+<body id="top">
 <main>
 <nav><a href="#en">English</a><a href="#es">Español</a><a href="#de">Deutsch</a><a href="#fr">Français</a></nav>
 
@@ -226,5 +227,6 @@
 <p>Questions sur cette politique : dev@infinit-c.com</p>
 </section>
 </main>
+<a class="top" href="#top" aria-label="Back to top">↑</a>
 </body>
 </html>
